@@ -1,0 +1,96 @@
+{
+  "slug": "woof",
+  "name": "WOOF",
+  "symbol": "WOOF",
+  "master": "EQBKyWOOFXlJpzYO8e44JG6uf6L3v4bYbbBBnKj9OHwBXjzm",
+  "decimals": 9,
+  "github": {
+    "owner": "Freebielife",
+    "repo": "WOOF"
+  },
+  "pools": [
+    {
+      "address": "EQBLj-WT9pKhDCBx9EQHLZyPbq2flKspXDl6BPc9GzfIU4Jh",
+      "dex": "stonfi",
+      "quote": "TON",
+      "evidence": "https://tonapi.io/v2/accounts/EQBLj-WT9pKhDCBx9EQHLZyPbq2flKspXDl6BPc9GzfIU4Jh/events?limit=100"
+    },
+    {
+      "address": "EQBqYZaRguHuLSTUFwI2YAMhaiAnLAY2_lUCd1uwFMbB5L6W",
+      "dex": "dedust",
+      "quote": "TON",
+      "evidence": "https://tonapi.io/v2/accounts/EQBqYZaRguHuLSTUFwI2YAMhaiAnLAY2_lUCd1uwFMbB5L6W/events?limit=100"
+    }
+  ],
+  "primary_pool": "EQBLj-WT9pKhDCBx9EQHLZyPbq2flKspXDl6BPc9GzfIU4Jh",
+  "links": {
+    "telegram": "https://t.me/lostdogscoru",
+    "telegram_en": "https://t.me/lostdogscoeng"
+  },
+  "services": {
+    "UQD4uGNdB4a3f52mYOZf0x1nCmdd1DAvrLppL0a1cetTYCQx": "Binance",
+    "EQDPfqI17W9lF-3OmAJu92GOn22BoTMdTmW6cY4s0V-ArRRY": "Bybit"
+  },
+  "engine_version": "1.3.0",
+  "discovery": {
+    "checkedAt": 1795465812,
+    "sources": [
+      "https://tonapi.io/v2/jettons/EQBKyWOOFXlJpzYO8e44JG6uf6L3v4bYbbBBnKj9OHwBXjzm",
+      "https://api.geckoterminal.com/api/v2/networks/ton/tokens/EQBKyWOOFXlJpzYO8e44JG6uf6L3v4bYbbBBnKj9OHwBXjzm/pools?page=1"
+    ],
+    "primaryPoolPolicy": "largest indexed USD liquidity among swap-verified supported TON pools"
+  },
+  "flag_file": "web/project-flag.webp",
+  "logo_file": "web/project-logo.webp",
+  "logo_origin": "token_metadata",
+  "logo_source": "https://s.getgems.io/jetton/woof.png",
+  "service_provenance": {
+    "0:f8b8635d0786b77f9da660e65fd31d670a675dd4302facba692f46b571eb5360": {
+      "category": "custody",
+      "source": "User-provided attribution, 2026-11-22; ownership not independently verified"
+    },
+    "0:cf7ea235ed6f6517edce98026ef7618e9f6d81a1331d4e65ba718e2cd15f80ad": {
+      "category": "custody",
+      "source": "User-provided attribution, 2026-11-22; ownership not independently verified"
+    }
+  },
+  "flag_source": "User-provided project emoji",
+  "template_repository": "Freebielife/TON-Observatory-Template",
+  "max_html_bytes": 2500000,
+  "ui": {
+    "holders_initial": 10,
+    "holders_expanded": 20
+  },
+  "methodology": {
+    "valuation": "last observed swap in primary_pool times CURRENT total supply; not circulating market cap",
+    "primary_pool": "EQBLj-WT9pKhDCBx9EQHLZyPbq2flKspXDl6BPc9GzfIU4Jh",
+    "sellers": "sum of successful supported native TON swap sales; service roles excluded",
+    "holders": "balances excluding known services and identified contracts; unclassified accounts may remain until verified",
+    "burns": "accepted burn notifications and zero-address transfers shown as distinct evidence",
+    "usd": "historical TON/USD rate from CoinGecko",
+    "history": "incremental confirmed swaps; missing intervals remain partial"
+  },
+  "branding": {
+    "hero": {
+      "origin": "token_metadata",
+      "source": "https://s.getgems.io/jetton/woof.png",
+      "file": "web/project-logo.webp"
+    },
+    "sectionFlag": {
+      "source": "User-provided project emoji",
+      "catalogueKey": null,
+      "emoji": null,
+      "file": "web/project-flag.webp"
+    },
+    "channel": "https://t.me/lostdogscoru"
+  },
+  "project_description": {
+    "text": "WOOF — токен сети TON, связанный с экосистемой Lost Dogs. В официальном канале проекта WOOF упоминается как токен для кастомизации Lost Dogs NFT в Bazaar и как награда в игре Lost Dogs: Signals. Это описание применения токена по заявлениям проекта.",
+    "origin": "reviewed_sources",
+    "sources": [
+      "https://tonapi.io/v2/jettons/EQBKyWOOFXlJpzYO8e44JG6uf6L3v4bYbbBBnKj9OHwBXjzm",
+      "https://t.me/s/lostdogscoeng"
+    ],
+    "checked_at": "2026-11-23"
+  }
+}
