@@ -28,7 +28,13 @@ def fetch(path, attempts=3, *, api=API):
                 raise
             if attempt + 1 == attempts:
                 raise
-            time.sleep(2 ** (attempt + 1))
+            delay = 2 ** (attempt + 1)
+            if isinstance(error, HTTPError) and error.code == 429:
+                retry_after = error.headers.get("Retry-After", "") if error.headers else ""
+                delay = max(15 * (2 ** attempt), int(retry_after) if retry_after.isdigit() else 0)
+                if delay > 120:
+                    raise
+            time.sleep(delay)
 
 
 def raw_address(value):
